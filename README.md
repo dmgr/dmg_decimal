@@ -3,7 +3,7 @@
 ## Introduction
 
 This library aids one in handling decimals. It is very similar to how SQL decimal data type works.
-See the example below. See a spec file for more examples.
+See the example below.
 
 ## Example
 
@@ -18,5 +18,8 @@ decimal.to_s('F') #=> "1234.56"
 
 decimal = Dmg::Decimal.real("123.456", :precision => 2)
 decimal.to_s('F') #=> "120.0"
-(decimal * 2).to
+
+(decimal * 2).to_s('F') # => "240.0" 
 ```
+
+See a spec file for more examples.
