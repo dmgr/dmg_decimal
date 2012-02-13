@@ -39,7 +39,7 @@ module Dmg
                    :scale_approximation => :round,
                  }.update(options)
 
-      pips = BigDecimal(pips.to_s).send(@options[:scale_approximation])
+      pips = BigDecimal(pips.to_s).send(@options[:scale_approximation]).to_i
       
       current_precision = pips.abs.to_s.size
       desired_precision = @options[:precision]
